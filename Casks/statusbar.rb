@@ -7,7 +7,7 @@ cask "statusbar" do
   desc "Swift-native custom status bar"
   homepage "https://github.com/hytfjwr/StatusBar"
 
-  depends_on macos: ">= :tahoe"
+  depends_on macos: :tahoe
 
   app "StatusBar.app"
   binary "#{appdir}/StatusBar.app/Contents/MacOS/sbar"
