@@ -1,14 +1,25 @@
-# homebrew-statusbar
+# homebrew-tap
 
-Homebrew tap for [StatusBar](https://github.com/hytfjwr/StatusBar).
+Personal Homebrew tap for [hytfjwr](https://github.com/hytfjwr)'s tools.
 
-## Install
+> Renamed from `homebrew-statusbar`. Existing `brew tap hytfjwr/statusbar`
+> installs keep updating via GitHub's redirect, but new installs should use
+> `hytfjwr/tap`.
+
+## Usage
 
 ```bash
-brew tap hytfjwr/statusbar
-brew install statusbar
+brew tap hytfjwr/tap
 ```
 
-## Requirements
+## Formulae
 
-- macOS 26 (Tahoe)+
+| Name | Description | Install |
+| --- | --- | --- |
+| [dbtl](https://github.com/hytfjwr/dbtl) | Terminal UI for exploring dbt model lineage as ASCII art | `brew install hytfjwr/tap/dbtl` |
+
+## Casks
+
+| Name | Description | Install |
+| --- | --- | --- |
+| [StatusBar](https://github.com/hytfjwr/StatusBar) | Swift-native custom status bar (macOS 26+) | `brew install --cask hytfjwr/tap/statusbar` |
