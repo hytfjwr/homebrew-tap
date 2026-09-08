@@ -1,6 +1,6 @@
 cask "statusbar" do
-  version "0.19.0"
-  sha256 "e28ac9c5b5053aec4543c60f876f4902c5288064b9b814894515b67218fafb36"
+  version "0.20.0"
+  sha256 "054863a933c29b430ea48d608c6cd1774a4d19a70709938e2e385b08f17ec58d"
 
   url "https://github.com/hytfjwr/StatusBar/releases/download/v#{version}/StatusBar.zip"
   name "StatusBar"
@@ -12,9 +12,8 @@ cask "statusbar" do
   app "StatusBar.app"
   binary "#{appdir}/StatusBar.app/Contents/MacOS/sbar"
 
-  postflight do
-    system_command "/usr/bin/xattr",
-                   args: ["-cr", "#{appdir}/StatusBar.app"]
+  postflight_steps do
+    run "/usr/bin/xattr", args: ["-cr", "{{appdir}}/StatusBar.app"]
   end
 
   zap trash: "~/.config/statusbar"
