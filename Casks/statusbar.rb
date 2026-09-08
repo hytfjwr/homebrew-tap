@@ -12,9 +12,8 @@ cask "statusbar" do
   app "StatusBar.app"
   binary "#{appdir}/StatusBar.app/Contents/MacOS/sbar"
 
-  postflight do
-    system_command "/usr/bin/xattr",
-                   args: ["-cr", "#{appdir}/StatusBar.app"]
+  postflight_steps do
+    run "/usr/bin/xattr", args: ["-cr", "{{appdir}}/StatusBar.app"]
   end
 
   zap trash: "~/.config/statusbar"
