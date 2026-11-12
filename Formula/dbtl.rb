@@ -5,23 +5,23 @@ class Dbtl < Formula
 
   on_macos do
     on_arm do
-      url "https://github.com/hytfjwr/dbtl/releases/download/v0.6.0/dbtl-v0.6.0-aarch64-apple-darwin.tar.gz"
-      sha256 "b95163a23777d5ccc15118baf40ef1309884948a9d77353170ac4dbe7c32e847"
+      url "https://github.com/hytfjwr/dbtl/releases/download/v0.6.1/dbtl-v0.6.1-aarch64-apple-darwin.tar.gz"
+      sha256 "bbadacb78cbe3c25b79093f636fd0379d4850a45693656ce581564f0d8f664a4"
     end
     on_intel do
-      url "https://github.com/hytfjwr/dbtl/releases/download/v0.6.0/dbtl-v0.6.0-x86_64-apple-darwin.tar.gz"
-      sha256 "bdecbff4e21bfdd6a22e04ffe2e215722ac3ab13928e970336d38471483d9fdc"
+      url "https://github.com/hytfjwr/dbtl/releases/download/v0.6.1/dbtl-v0.6.1-x86_64-apple-darwin.tar.gz"
+      sha256 "b267e580db1e0fd643df936c110c124db9c8193d6a5f417e2dedd3951550f569"
     end
   end
 
   on_linux do
     on_arm do
-      url "https://github.com/hytfjwr/dbtl/releases/download/v0.6.0/dbtl-v0.6.0-aarch64-unknown-linux-gnu.tar.gz"
-      sha256 "381bd41699e44cc1feec72485adedf78f2e5ba06db3263aa0de87c53e9d40a08"
+      url "https://github.com/hytfjwr/dbtl/releases/download/v0.6.1/dbtl-v0.6.1-aarch64-unknown-linux-gnu.tar.gz"
+      sha256 "eb61e84c6af72253a5cee11f034e219fb24383bce61cb2670e886533bb3b47f1"
     end
     on_intel do
-      url "https://github.com/hytfjwr/dbtl/releases/download/v0.6.0/dbtl-v0.6.0-x86_64-unknown-linux-gnu.tar.gz"
-      sha256 "bf3fff06e76360907d516c72774935582819edc93c1c7a1aeb40681b270e25ca"
+      url "https://github.com/hytfjwr/dbtl/releases/download/v0.6.1/dbtl-v0.6.1-x86_64-unknown-linux-gnu.tar.gz"
+      sha256 "c1746ff52fb0e93a90f7390f6f4aa3a11b9343c75095d40c6736452dd61a7b00"
     end
   end
 
